@@ -1,12 +1,16 @@
 /*******************************************************************************
  * Your code here!
  ******************************************************************************/
-if (num % 3 === 0){
-  return "Fizz"
+const num = getInput(0)
+
+if (num % 3 === 0 && num % 5 === 0){
+  console.log("FizzBuzz")
+} else if (num % 3 === 0){
+  console.log("Fizz") 
 } else if (num % 5 === 0){
-  return "Buzz" 
-} else (num % 3 === 0 && num % 5 === 0){
-  return "FizzBuzz"
+  console.log("Buzz")
+} else {
+  console.log(num)
 }
 
 
